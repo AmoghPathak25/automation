@@ -1,0 +1,23 @@
+# Python and test artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Local runtime and potentially sensitive business data
+*.log
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml
+data/input/*
+data/working/*
+data/archive/*
+data/output/*
+!data/input/.gitkeep
+!data/working/.gitkeep
+!data/archive/.gitkeep
+!data/output/.gitkeep
