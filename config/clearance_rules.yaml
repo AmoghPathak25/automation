@@ -1,0 +1,11 @@
+# Commercial policy intentionally unset until supplied and approved by the business owner.
+minimum_stock_quantity: null
+ageing_threshold_days: null
+excess_stock_threshold: null
+maximum_discount_percent: null
+minimum_approved_price: null
+required_stock_freshness_days: null
+permitted_units: []
+permitted_currencies: []
+# Candidate ranking uses only configured fields and is disabled until a ranking policy is approved.
+ranking_field: null

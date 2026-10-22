@@ -1,0 +1,28 @@
+app:
+  name: Office Email Automation
+  timezone: local
+  # Strict format for text dates from imported inventory exports.
+  # Set null to accept only exact YYYY-MM-DD ISO text dates; Excel-native dates are retained.
+
+  dry_run: true
+  database_path: data/working/automation.sqlite3
+  max_upload_mb: 50
+  allowed_extensions: [.xlsx, .xlsm, .csv, .pdf, .txt, .eml]
+  stale_after_days: null
+  date_format: "%Y-%m-%d"
+inventory:
+  required_fields: [material_code]
+  duplicate_key_fields: [material_code, warehouse, storage_location, batch_number]
+email:
+  ollama_enabled: false
+  ollama_model: qwen2.5:7b
+  categories:
+    - Product availability enquiry
+    - Product specification enquiry
+    - Alternative-product request
+    - Stock-clearance opportunity
+    - Sales-order-related request
+    - Dispatch or delivery communication
+    - Receipt or reconciliation issue
+    - General correspondence
+    - Unknown / manual review
